@@ -1,0 +1,3 @@
+Ejecucion: "node servidor_simple.js"
+
+Para acceder a la página introduzca en su navegador : "localhost:8888"

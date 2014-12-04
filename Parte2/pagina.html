@@ -1,0 +1,36 @@
+
+<!--Fichero que mostrará el servidor simple -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pagina de ejemplo</title>
+<h1>Ejercicio3. </h1>
+<h2>Ejemplo Ejercicio 3 Curso Programación cliente/ servidor con JavaScript </h2>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" >
+	
+<!--Funciones para usar en la funcion "hover" de jQuery-->
+function entraMouse()
+{
+  $(this).css("background-color","#f00");
+}
+
+function saleMouse()
+{
+  $(this).css("background-color","#fff");
+}
+
+<!--Hacemos uso de jQuery para hacer un poco mas dinamico el ejemplo-->
+$(document).ready(function()
+{
+  $("a").hover(entraMouse,saleMouse);
+  });
+</script>
+
+</head>
+       
+  <div id="division">
+El siguiente enlace le dirige a mi direccion de github. Uso otro metodo de jQuery en este caso hover() junto a css para cambiar el color. Para iluminar el enlace cuando el cursor esta encima de este.
+  </div>
+  <a href="https://github.com/josearcosaneas//">Mipagina de Github</a><br>
+</html>

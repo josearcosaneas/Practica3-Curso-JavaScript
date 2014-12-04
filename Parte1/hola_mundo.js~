@@ -1,0 +1,8 @@
+function decirPalabra(palabra) {
+  console.log(palabra);
+}
+
+
+decirPalabra("Hola");
+decirPalabra("a");
+decirPalabra("Todos");

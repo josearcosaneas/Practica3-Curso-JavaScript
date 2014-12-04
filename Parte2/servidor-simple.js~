@@ -1,0 +1,23 @@
+ 
+var http = require("http");
+var i =0;
+var fs = require('fs');
+var index = fs.readFileSync('pagina.html');
+var numpor = 8888;
+function onRequest(request, response) {
+  console.log("Peticion Recibida.");
+  
+  response.writeHead(200, {"Content-Type": "text/html"});
+  response.write("Este es un servidor simple creado");
+  response.write("para el curso de programacion cliente/servidor");
+  response.write("en javascript");
+  i=i+1;
+  
+  response.write("<br></br>Peticion a la pagina    "+ i);
+  response.write("<br></br>Tambien podemos mostrar otra pagina");
+  response.write(index);
+  response.end();
+}
+
+http.createServer(onRequest).listen(numpor);
+console.log("Servidor Iniciado en el Puerto."+ numpor);
